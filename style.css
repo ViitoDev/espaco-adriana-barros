@@ -7,6 +7,7 @@
 
 header {
   width: 100%;
+  padding: 0px 20px 0px 20px;
 }
 
 .header-content {
@@ -25,7 +26,40 @@ i {
 }
 
 .header-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
   color: #FF6961;
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
+}
+.header-button {
+  border: 1px solid #D9D9D9;
+  padding: 8px 24px;
+  border-radius: 5px;
+  color: #D9D9D9;
+  background-color: transparent;
+  transition: background-color 0.8s;
+}
+
+.header-button:hover {
+  border: 1px solid #FF6961;
+  background-color: #FF6961;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 150px;
+  max-height: 200px;
+  width: auto;
+  height: auto;
 }
 
 body {
