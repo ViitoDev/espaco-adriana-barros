@@ -58,10 +58,25 @@ i{
     height: auto;
 }
 
-@media screen and (max-width 768px) {
+@media screen and (max-width: 768px) {
+    .header-content {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    i{
+        margin-top: 16px;
+        font-size: 40px;
+    }
+
     .header-logo {
         width: 160px;
-        margin-top: 46px;
+        margin-top: 10px;
+    }
+
+    .header-button {
+        display: none;
     }
 }
 
